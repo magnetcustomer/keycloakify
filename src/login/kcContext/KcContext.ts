@@ -383,6 +383,10 @@ export declare namespace KcContext {
             firstName?: string;
             lastName?: string;
         };
+        profile: {
+            attributes: Attribute[];
+            attributesByName: Record<string, Attribute>;
+        };
     };
 
     export type LoginIdpLinkConfirm = Common & {
